@@ -1,2 +1,2 @@
 # Python-DataScience
-Miuul kursu 
+Python Programming for Data Science

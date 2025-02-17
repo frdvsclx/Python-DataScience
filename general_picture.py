@@ -28,14 +28,14 @@ df2.isnull().sum() #true ve false toplamını ayrı ayrı yazar -dataframedeki n
 """
 
 def check_df(dataframe, head=5):
-    print(###size###)
-    print(dataframe.shape)
-    print(###missing###)
-    print(dataframe.isnull().sum())
-    print(###info###)
-    print(dataframe.info())
-    print(###head###)
-    print(dataframe.head(head))
+        print("###size###")
+        print(dataframe.shape)
+        print("###missing###")
+        print(dataframe.isnull().sum())
+        print("###info###")
+        print(dataframe.info())
+        print("###head###")
+        print(dataframe.head(head))
 
 df2= sns.load_dataset("tips")
 check_df(df2,5)

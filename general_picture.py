@@ -27,15 +27,21 @@ df2.isnull().values.any() #isnull boş olup olmadıgına bakar, values true/fals
 df2.isnull().sum() #true ve false toplamını ayrı ayrı yazar -dataframedeki nerede eksik var görülür-
 """
 
-def check_df(dataframe, head=5):
-        print("###size###")
+def check_df(dataframe, head=10):
+        print("################size###")
         print(dataframe.shape)
-        print("###missing###")
+        print("###############missing###")
         print(dataframe.isnull().sum())
-        print("###info###")
+        print("###################info###")
         print(dataframe.info())
-        print("###head###")
+        print("##############head###")
         print(dataframe.head(head))
 
-df2= sns.load_dataset("tips")
-check_df(df2,5)
+df2= sns.load_dataset("penguins") #içinde daha ne kadar dataframe var ctr ile bakılabilir
+check_df(df2,20)
+
+df2["island"].value_counts()
+
+
+
+

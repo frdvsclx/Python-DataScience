@@ -5,7 +5,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-pd.set_option('displays.max_columns',None)
+pd.set_option('display.max_columns',None)
 pd.set_option('display.width', 500)
 
 df=sns.load_dataset("titanic")
@@ -37,11 +37,11 @@ def check_df(dataframe, head=10):
         print("##############head###")
         print(dataframe.head(head))
 
-df2= sns.load_dataset("penguins") #içinde daha ne kadar dataframe var ctr ile bakılabilir
+df2= sns.load_dataset("penguins") #içinde daha ne kadar dataframe var ctr+loaddataset ile bakılabilir
 check_df(df2,20)
 
 df2["island"].value_counts()
-
+ 
 
 
 

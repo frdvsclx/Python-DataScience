@@ -9,7 +9,7 @@ from pandas.conftest import axis_1
 pd.set_option('display.max_columns',None)
 pd.set_option('display.width', 500)
 
-df= pd.read_csv("data.csv")
+df= pd.read_csv("datasets/data.csv")
 df= df.iloc[:,1:-1]
 
 df.head()

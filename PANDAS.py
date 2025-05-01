@@ -24,7 +24,7 @@ a.tail(3) #son 3 elemanı getirir
 ########VERİ OKUMA######
 #örn csv, text,excel dosyaları okuyabilir
 
-df= pd.read_csv("username.csv") #read_ dan sonraki kısım değişebilir
+df= pd.read_csv("datasets/username.csv") #read_ dan sonraki kısım değişebilir
 df.head() #ile dataframe e bakarım
 ###EGER CRTL İLE PD ÜZERİNE GELİRSEM BASKA KULLANIMLARI DA GÖREBİLİRİM(aintnoway)
 
@@ -190,5 +190,7 @@ df6= df5 + 31
 
 pd.concat([df5,df6 ],ignore_index=True)
 
+df['Yaş Kategorisi'] = df['Yaş'].apply(lambda x: 'Genç' if x < 30 else ('Orta yaşlı' if x <= 60 else 'Yaşlı'))
 #########merge ile birleştirme işlemlerii#####
+
 
